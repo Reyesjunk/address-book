@@ -3,3 +3,28 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+nav {
+  text-align: center;
+}
+ul {
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+.form-wrapper {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-wrapper input{
+  width: 100%;
+}
+.btn {
+  width: 100%;
+}
+.people-bin {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

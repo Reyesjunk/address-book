@@ -1,21 +1,37 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Person from './components/person';
+import NavBar from './components/navBar';
 
-class App extends Component {
-  render() {
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      searchTerm: '',
+      people: [
+        {
+          firstName: 'Ramon',
+          lastName: 'Reyes',
+          address: '333 Woody Ave',
+          city: 'Bridgeport',
+          state: 'CT'
+        },
+        {
+          firstName: 'Peter',
+          lastName:  'Szujewski',
+          address: '123 Awesome Ave',
+          city: 'Honolulu',
+          state: 'HI'
+        }
+      ]
+    }
+  }
+  render(){
+    const people = this.state.people.map((person, index) => <Person key={index} person={person} />);
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+        <NavBar />
+        <div className="people-bin">{people}</div>
       </div>
     );
   }
 }
-
-export default App;
