@@ -2,28 +2,14 @@ import React from 'react';
 import Person from './components/person';
 import NavBar from './components/navBar';
 import AddForm from './components/addForm';
+import people from './people'
 
 export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       searchTerm: '',
-      people: [
-        {
-          firstName: 'Ramon',
-          lastName: 'Reyes',
-          address: '333 Woody Ave',
-          city: 'Bridgeport',
-          state: 'CT'
-        },
-        {
-          firstName: 'Peter',
-          lastName:  'Szujewski',
-          address: '123 Awesome Ave',
-          city: 'Honolulu',
-          state: 'HI'
-        }
-      ]
+      people: people
     }
   }
 

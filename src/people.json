@@ -1,0 +1,51 @@
+[
+  {
+    "firstName": "Ramon",
+    "lastName": "Reyes",
+    "address": "333 Woody Ave",
+    "city": "Bridgeport",
+    "state": "CT"
+  },
+  {
+    "firstName": "Peter",
+    "lastName":  "Szujewski",
+    "address": "123 Awesome Ave",
+    "city": "Honolulu",
+    "state": "HI"
+  },
+  {
+    "firstName": "Howard",
+    "lastName": "Duck",
+    "address": "333 Woody Ave",
+    "city": "Bridgeport",
+    "state": "CT"
+  },
+  {
+    "firstName": "Miss",
+    "lastName":  "Demeanor",
+    "address": "123 Awesome Ave",
+    "city": "Honolulu",
+    "state": "HI"
+  },
+  {
+    "firstName": "Wheres",
+    "lastName": "Waldo",
+    "address": "333 Woody Ave",
+    "city": "Bridgeport",
+    "state": "CT"
+  },
+  {
+    "firstName": "Freddy",
+    "lastName":  "Prince",
+    "address": "123 Awesome Ave",
+    "city": "Honolulu",
+    "state": "HI"
+  },
+  {
+    "firstName": "Wendy",
+    "lastName":  "Williams",
+    "address": "123 Stopit Ave",
+    "city": "Detroit",
+    "state": "MI"
+  }
+]
