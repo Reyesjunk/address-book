@@ -25,11 +25,20 @@ export default class App extends React.Component {
       ]
     }
   }
+
+  updateSearch(search){
+    this.setState({searchTerm: search.toLowerCase()});
+  }
+  
   render(){
-    const people = this.state.people.map((person, index) => <Person key={index} person={person} />);
+    const filtered = this.state.people.filter((person)=> {
+      let name = person.firstName.toLowerCase();
+      return name.includes(this.state.searchTerm);
+    });
+    const people = filtered.map((person, index) => <Person key={index} person={person} />);
     return (
       <div>
-        <NavBar />
+        <NavBar updateSearch={(search)=>this.updateSearch(search)}/>
         <div className="people-bin">{people}</div>
       </div>
     );
