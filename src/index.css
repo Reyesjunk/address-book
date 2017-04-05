@@ -1,14 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
+
 nav {
   text-align: center;
 }
+
 ul {
   padding: 0;
 }
+
 ul li {
   list-style: none;
 }
@@ -19,12 +27,52 @@ ul li {
   margin-right: auto;
 }
 
-.form-wrapper input{
+.form-wrapper input {
   width: 100%;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .people-bin {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-top: 30px;
+  max-width: 1020px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+
+.people-bin .person {
+  margin: 0 20px;
+}
+
+.people-bin h1 {
+  margin-top: 0;
+}
+
+.btn {
+  width: 100%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+}
+
+.form-container {
+  width: 20%;
+}
+
+.form-container input {
+  margin-bottom: 5px; 
+  width: 100%;
+}
+
+.form-container button {
+  width: 50%;
+}
+
+.form-container h3 {
+  margin-top: 5px;
 }

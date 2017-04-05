@@ -1,6 +1,7 @@
 import React from 'react';
 import Person from './components/person';
 import NavBar from './components/navBar';
+import AddForm from './components/addForm';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -30,7 +31,11 @@ export default class App extends React.Component {
     this.setState({searchTerm: search.toLowerCase()});
   }
   
-  render(){
+  addPerson(person) {
+    this.setState({people: [...this.state.people, person]});
+  }
+
+  render() {
     const filtered = this.state.people.filter((person)=> {
       let name = person.firstName.toLowerCase();
       return name.includes(this.state.searchTerm);
@@ -39,7 +44,10 @@ export default class App extends React.Component {
     return (
       <div>
         <NavBar updateSearch={(search)=>this.updateSearch(search)}/>
-        <div className="people-bin">{people}</div>
+        <div className="people-bin">
+          {people}
+          <AddForm addPerson={(person) => this.addPerson(person)} />
+        </div>
       </div>
     );
   }
